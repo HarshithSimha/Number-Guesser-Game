@@ -6,3 +6,8 @@ GAME FUNCTION:
 - Notify the player of the correct answer if loose
 - Let player choose to play again
 */
+// Game values
+let min = 1,
+    max = 100,
+    winningNum = getRandomNum(min, max),
+    guessesLeft = 5
