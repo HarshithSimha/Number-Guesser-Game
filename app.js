@@ -21,3 +21,9 @@ const game = document.querySelector('#game'),
 // Assign UI min and max
 minNum.textContent = min;
 maxNum.textContent = max;
+// Play again event listener
+game.addEventListener('mousedown',function(e){
+    if (e.target.className === 'play-again') {
+      window.location.reload();
+    }
+  })
