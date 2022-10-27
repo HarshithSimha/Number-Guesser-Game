@@ -63,3 +63,24 @@ guessBtn.addEventListener('click', function(){
   }
     }
 })
+// Game Over
+function gameOver(won, msg) {
+  let color;
+  if (won === true) {
+    color = 'green';
+  } else {
+    color = 'red';
+  }
+  
+  // Disable input
+  guessInput.disabled = true;
+  // Change Border Color
+  guessInput.style.borderColor = color;
+  // Set text Color
+  message.style.color = color;
+  // Set message
+  setMessage(msg);
+  // Play again
+  guessBtn.value = 'Play Again';
+  guessBtn.className += 'play-again';
+}
